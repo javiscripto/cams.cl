@@ -88,6 +88,34 @@
     "category": "mascotas"
   },
   {
+    "original": "../imgs/mascota14.webp",
+    "category": "mascotas"
+  },
+  {
+    "original": "../imgs/mascota15.webp",
+    "category": "mascotas"
+  },
+  {
+    "original": "../imgs/mascota16.webp",
+    "category": "mascotas"
+  },
+  {
+    "original": "../imgs/mascota17.webp",
+    "category": "mascotas"
+  },
+  {
+    "original": "../imgs/mascota18.webp",
+    "category": "mascotas"
+  },
+  {
+    "original": "../imgs/mascota19.webp",
+    "category": "mascotas"
+  },
+  {
+    "original": "../imgs/mascota20.webp",
+    "category": "mascotas"
+  },
+  {
     "original": "../imgs/sesion1_1.webp",
     "category": "sesiones"
   },
@@ -114,5 +142,89 @@
   {
     "original": "../imgs/sesion2_5.webp",
     "category": "sesiones"
+  },
+  {
+    "original": "../imgs/evento1.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/evento2.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/evento3.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/evento4.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/evento5.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/evento6.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/evento7.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/evento8.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/evento9.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/teleton1.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/teleton2.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/teleton3.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/teleton4.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/teleton5.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/teleton6.webp",
+    "category": "eventos"
+  },
+  {
+    "original": "../imgs/producto1.webp",
+    "category": "productos"
+  },
+  {
+    "original": "../imgs/producto2.webp",
+    "category": "productos"
+  },
+  {
+    "original": "../imgs/producto3.webp",
+    "category": "productos"
+  },
+  {
+    "original": "../imgs/producto4.webp",
+    "category": "productos"
+  },
+  {
+    "original": "../imgs/producto5.webp",
+    "category": "productos"
+  },
+  {
+    "original": "../imgs/producto6.webp",
+    "category": "productos"
   }
 ]
