@@ -9,21 +9,27 @@ export const Footer = () => {
 
       <div className={styles.iconContainer}>
         <div className={styles.iconItem}>
-          <a href="https://www.instagram.com/">
+          <a href="https://www.instagram.com/cams_visualart/" target="_blank">
             <box-icon type="logo" name="instagram"></box-icon>
           </a>
           <p>instagram</p>
         </div>
 
         <div className={styles.iconItem}>
-          <a href="https://www.flickr.com/">
+          <a
+            href="https://www.flickr.com/photos/liberum_papilio/"
+            target="_blank"
+          >
             <box-icon name="flickr" type="logo"></box-icon>
           </a>
           <p>flickr</p>
         </div>
 
         <div className={styles.iconItem}>
-          <a href="https://www.tiktok.com/">
+          <a
+            href="https://www.tiktok.com/@camsvisualart?_t=ZM-8tVsYUhzSbO&_r=1"
+            target="_blank"
+          >
             <box-icon name="tiktok" type="logo"></box-icon>
           </a>
           <p>tiktok</p>

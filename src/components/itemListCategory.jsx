@@ -19,6 +19,16 @@ export const ItemlistCategory = () => {
       img: "/imgs/sesion1_1.webp",
       descripcion: "lorem lorem sesiones",
     },
+    {
+      categoria: "eventos",
+      img: "/imgs/evento1.webp",
+      descripcion: "lorem lorem eventos",
+    },
+    {
+      categoria: "productos",
+      img: "/imgs/producto1.webp",
+      descripcion: "lorem lorem productos",
+    },
   ];
   return (
     <div className="container">
