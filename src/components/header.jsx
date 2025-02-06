@@ -19,7 +19,13 @@ export const Header = () => {
 
   return (
     <header className="App-header">
-      <video className="video" src={"/lente.mp4"} autoPlay loop muted />
+      <video
+        className="video"
+        src={"/convertedLente.mp4"}
+        autoPlay
+        loop
+        muted
+      />
       <div className="headerContainer">
         <h1>
           {titulo.map((letra, index) => (
