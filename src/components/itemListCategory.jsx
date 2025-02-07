@@ -6,27 +6,27 @@ export const ItemlistCategory = () => {
   const categorias = [
     {
       categoria: "embarazo",
-      img: "/imgs/embarazo1.webp",
+      img: "https://camscl17.s3.us-east-1.amazonaws.com/imgs/embarazo1.webp",
       descripcion: "lorem ipsum ipsumito lorito",
     },
     {
       categoria: "mascotas",
-      img: "/imgs/mascota9.webp",
+      img: "https://camscl17.s3.us-east-1.amazonaws.com/imgs/mascota9.webp",
       descripcion: "lorem lorem mascota 9",
     },
     {
       categoria: "sesiones",
-      img: "/imgs/sesion1_1.webp",
+      img: "https://camscl17.s3.us-east-1.amazonaws.com/imgs/sesion1_1.webp",
       descripcion: "lorem lorem sesiones",
     },
     {
       categoria: "eventos",
-      img: "/imgs/evento1.webp",
+      img: "https://camscl17.s3.us-east-1.amazonaws.com/imgs/evento1.webp",
       descripcion: "lorem lorem eventos",
     },
     {
       categoria: "productos",
-      img: "/imgs/producto1.webp",
+      img: "https://camscl17.s3.us-east-1.amazonaws.com/imgs/producto1.webp",
       descripcion: "lorem lorem productos",
     },
   ];
