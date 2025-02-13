@@ -1,6 +1,8 @@
 import ImageGallery from "react-image-gallery";
 import "./gallery.css";
 import "react-image-gallery/styles/css/image-gallery.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { useEffect, useState } from "react";
 
 export const Gallery = ({ categoria }) => {
@@ -53,12 +55,12 @@ export const Gallery = ({ categoria }) => {
       )}
       <div className="display-image-gallery">
         {images.map((image, index) => (
-          <img
-            index={index}
+          <LazyLoadImage
             key={index}
             src={image.original}
             alt={`Image ${index}`}
             onClick={() => handleSetvisible(index)}
+            effect="blur"
           />
         ))}
       </div>
