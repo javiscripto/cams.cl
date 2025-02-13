@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from "./itemlistcategory.module.css";
 import { Link } from "react-router-dom";
 import { Loader } from "./loader";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export const ItemlistCategory = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,14 +39,13 @@ export const ItemlistCategory = () => {
 
   const handleIncrementCountImages = () => {
     setloadedImages((prevLoadedImages) => {
-      const newLoadedImages = prevLoadedImages + 1; // Incrementa el contador
+      const newLoadedImages = prevLoadedImages + 1;
 
-      // Verifica si todas las imágenes están cargadas
       if (newLoadedImages === categorias.length) {
         setIsLoading(false);
       }
 
-      return newLoadedImages; // Devuelve el nuevo valor
+      return newLoadedImages;
     });
   };
 
@@ -64,9 +65,9 @@ export const ItemlistCategory = () => {
             <div className={styles.card}>
               <h3>{item.categoria}</h3>
               <p>{item.descripcion}</p>
-              <img
+              <LazyLoadImage
                 loading="lazy"
-                onLoad={handleIncrementCountImages} // Llama a la función cuando la imagen se carga
+                onLoad={handleIncrementCountImages}
                 src={item.img}
                 alt={item.categoria}
               />
