@@ -52,6 +52,24 @@ span:hover {
   color: #ff0000;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
+.innerContainer {
+  position: relative;
+  .slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 20%;
+    }
+  }
+}
 
 .video {
   left: 0;

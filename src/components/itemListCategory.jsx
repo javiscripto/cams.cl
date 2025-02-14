@@ -50,15 +50,8 @@ export const ItemlistCategory = () => {
   };
 
   return (
-    <div className="container">
-      <h2>Te invito a ver mis obras</h2>
-      <p>
-        Soy una artista visual apasionada especializada en la creación de obras
-        únicas que retratan momentos especiales, personas especiales y mascotas
-        a través de diversas técnicas.
-      </p>
-
-      {isLoading && <Loader num={(loadedImages * 100) / categorias.length} />}
+    <div>
+      {/* {isLoading && <Loader num={(loadedImages * 100) / categorias.length} />} */}
       <div className={styles.cardContainer}>
         {categorias.map((item, index) => (
           <Link key={index} to={`/galeria/${item.categoria}`}>
