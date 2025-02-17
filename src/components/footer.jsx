@@ -4,7 +4,7 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.textContainer}>
         <p>Copyright &copy; 2025 - CAMS</p>
-        <p>desarrollado por Javiscripto studio</p>
+        <span>JaviScripto</span>
       </div>
 
       <div className={styles.iconContainer}>

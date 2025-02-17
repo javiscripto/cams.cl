@@ -1,0 +1,16 @@
+.Appheader {
+  /*position: relative;*/
+  position: -webkit-sticky;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+}
+.letraTitulo {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+span:hover {
+  color: #ff0000;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}

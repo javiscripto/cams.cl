@@ -7,11 +7,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-.body {
+html,
+body,
+#root {
+  heigth: 100%;
+  margin: 0;
+  flex-direction: column;
+}
+
+.App {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-gap: 1rem;
   min-height: 100vh;
+}
+main {
+  flex: 1;
 }
 /*clase general para contenido de toda la página */
 .container {
@@ -36,22 +47,7 @@ h2 {
   margin: 2rem 0;
   /*este titulo va en mayusculas*/
 }
-.Appheader {
-  /*position: relative;*/
-  position: -webkit-sticky;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-.letraTitulo {
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
 
-span:hover {
-  color: #ff0000;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-}
 .innerContainer {
   position: relative;
   .slide {

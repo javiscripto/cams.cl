@@ -3,7 +3,6 @@
   .parallax {
     z-index: -1;
     position: relative;
-    background-color: red;
   }
   .header {
     position: fixed;

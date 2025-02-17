@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import styles from "./header.module.css";
 
 export const Header = () => {
   const titulo = [
@@ -18,7 +19,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className="App-header">
+    <header className={styles.Appheader}>
       <video
         className="video"
         src={"/convertedLente.mp4"}

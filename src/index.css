@@ -18,11 +18,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.body {
+html,
+body,
+#root {
+  heigth: 100%;
+  margin: 0;
+  flex-direction: column;
+}
+.App {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-gap: 1rem;
   min-height: 100vh;
+}
+main {
+  flex: 1;
 }
 .innerContainer {
   position: relative;

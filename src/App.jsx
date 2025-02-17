@@ -9,24 +9,27 @@ import { Galeria } from "./pages/galeria";
 import { Footer } from "./components/footer";
 import { AnimatePresence } from "framer-motion";
 import { InnerTransition } from "./components/transition/inner.jsx";
+import { LenisScroll } from "./components/lenis.jsx";
 
 function App() {
   return (
-    <div className="body">
+    <div className="App">
       <NavBar />
-      <AnimatePresence mode="wait">
-        <main>
-          <InnerTransition>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/galeria" element={<Galeria />} />
-              <Route path="/galeria/:categoria" element={<Categoria />} />
-              <Route path="/about" element={<SobreMi />} />
-              <Route path="/contacto" element={<Contacto />} />
-            </Routes>
-          </InnerTransition>
-        </main>
-      </AnimatePresence>
+      <main>
+        <LenisScroll>
+          <AnimatePresence mode="wait">
+            <InnerTransition>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/galeria" element={<Galeria />} />
+                <Route path="/galeria/:categoria" element={<Categoria />} />
+                <Route path="/about" element={<SobreMi />} />
+                <Route path="/contacto" element={<Contacto />} />
+              </Routes>
+            </InnerTransition>
+          </AnimatePresence>
+        </LenisScroll>
+      </main>
       <Footer />
     </div>
   );
