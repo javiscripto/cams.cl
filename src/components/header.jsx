@@ -27,7 +27,7 @@ export const Header = () => {
         loop
         muted
       />
-      <div className="headerContainer">
+      <div className={styles.headerContainer}>
         <h1>
           {titulo.map((letra, index) => (
             <motion.span

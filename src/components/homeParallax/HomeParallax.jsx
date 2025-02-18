@@ -2,6 +2,8 @@ import { useRef } from "react";
 import styles from "./HomeParallax.module.css";
 import { useTransform, useScroll, motion } from "framer-motion";
 import useDimentions from "./useDimetions";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const images = [
   {
@@ -39,7 +41,13 @@ const Column = ({ imgs, y }) => {
     <motion.div style={{ y }} className={styles.column}>
       {imgs.map((img) => (
         <div key={img.srcImg} className={styles.imageContainer}>
-          <img src={img.srcImg} alt={img.srcImg} />
+          {/* <LazyLoadImage */}
+          {/*   clasName={styles.img} */}
+          {/*   src={img.srcImg} */}
+          {/*   alt={img.srcImg} */}
+          {/*   efect="blur" */}
+          {/* /> */}
+          <img className={styles.img} src={img.srcImg} alt={img.srcImg} />
         </div>
       ))}
     </motion.div>
@@ -54,10 +62,10 @@ export const HomeParallax = () => {
     offset: ["start end", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [0, height * 0.5]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 0.3]);
-  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 0.15]);
-  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 0.4]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, height * 0.1]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 0.5]);
+  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 0.3]);
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 0.6]);
   return (
     <div ref={container} className={styles.container}>
       <Column imgs={[images[0], images[1]]} y={y} />
