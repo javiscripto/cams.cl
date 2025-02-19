@@ -5,7 +5,7 @@ import { useEffect } from "react";
 export const LenisScroll = ({ children }) => {
   const container = useRef(null);
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({ lerp: 0.1 });
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
