@@ -47,7 +47,10 @@ const Column = ({ imgs, y }) => {
           {/*   alt={img.srcImg} */}
           {/*   efect="blur" */}
           {/* /> */}
-          <img className={styles.img} src={img.srcImg} alt={img.srcImg} />
+          {/* <img className={styles.img} src={img.srcImg} alt={img.srcImg} /> */}
+          <div className={styles.img}>
+            <p>{img.srcImg}</p>
+          </div>
         </div>
       ))}
     </motion.div>
